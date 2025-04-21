@@ -62,12 +62,12 @@ const saveUserForm=(event)=>{
 userForm.addEventListener('submit',saveUserForm)
 displayEntries();
 
-let clearButton=document.getElementById("clear-button");
+// let clearButton=document.getElementById("clear-button");
 
-clearButton.addEventListener('click',()=>{
-    localStorage.clear();
-    displayEntries();
-})
+// clearButton.addEventListener('click',()=>{
+//     localStorage.clear();
+//     displayEntries();
+// })
 
 
 window.onload = function() {
