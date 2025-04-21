@@ -1,0 +1,84 @@
+#form-div{
+    /* border: 0.05em solid red; */
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+form{
+    width: fit-content;
+    padding: 2em;
+    padding-top: 0%;
+    border-radius: 0.5em;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.2);
+    font-size: 1em;
+    background-color: #f0f0f0;
+}
+form label{
+    float:left;
+    padding-right: 2em;
+    width:10em;
+
+}
+p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{
+    padding: 0.5em;
+}
+#terms{
+    padding: 0;
+    float: left;
+
+}
+#l_terms{
+    padding: 0;
+    float: right;
+}
+
+#submit{
+    padding: 0.75em;
+    border-radius: 0.5em;
+    background-color: rgb(27, 229, 27);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+#entries-div{
+    /* border: 0.05em solid red; */
+    width:100%;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+#inner{
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.2);
+    width: 88%;
+
+}
+#entries-div h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#user-entries table{
+    width: 100%;
+
+}
+
+#user-entries table,th,td{
+border: 1px solid black;
+font-size: 1.3em;
+border-collapse: collapse;
+}
+#clear-button{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
