@@ -47,6 +47,18 @@ const saveUserForm=(event)=>{
     const dob=document.getElementById("dob").value;
     const terms=document.getElementById("terms").checked;
 
+    const email = document.getElementById("email");
+
+    email.addEventListener("input", function (event) {
+    if (email.validity.typeMismatch) {
+    email.setCustomValidity("This is not a valid email address!");
+    email.reportValidity();
+    } else {
+    email.setCustomValidity("");
+  }
+});
+    
+
     const entry={
         name,
         email,
@@ -97,26 +109,16 @@ window.onload = function() {
   };
 
 
+
+
+
 // const email = document.getElementById("email");
-
-// email.addEventListener("input", function (event) {
-//   if (email.validity.typeMismatch) {
-//     email.setCustomValidity("This is not a valid email address!");
-//     email.reportValidity();
-//   } else {
-//     email.setCustomValidity("");
-
-//   }
+// email.addEventListener("input", function () {
+//  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//  if (!emailPattern.test(email.value)) {
+//  email.setCustomValidity("Please enter a valid email address.");
+//  } else {
+//  email.setCustomValidity("");
+//  }
 // });
-
-
-const email = document.getElementById("email");
-email.addEventListener("input", function () {
- const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
- if (!emailPattern.test(email.value)) {
- email.setCustomValidity("Please enter a valid email address.");
- } else {
- email.setCustomValidity("");
- }
-});
 
