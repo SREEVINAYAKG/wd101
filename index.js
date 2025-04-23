@@ -106,7 +106,8 @@ window.onload = function() {
 //   } else {
 //     email.setCustomValidity("");
 
-
+//   }
+// });
 
 
 const email = document.getElementById("email");
@@ -118,5 +119,4 @@ email.addEventListener("input", function () {
  email.setCustomValidity("");
  }
 });
-//   }
-// });
+
