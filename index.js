@@ -105,5 +105,18 @@ window.onload = function() {
 //     email.reportValidity();
 //   } else {
 //     email.setCustomValidity("");
+
+
+
+
+const email = document.getElementById("email");
+email.addEventListener("input", function () {
+ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ if (!emailPattern.test(email.value)) {
+ email.setCustomValidity("Please enter a valid email address.");
+ } else {
+ email.setCustomValidity("");
+ }
+});
 //   }
 // });
