@@ -47,6 +47,16 @@ const saveUserForm=(event)=>{
     const dob=document.getElementById("dob").value;
     const terms=document.getElementById("terms").checked;
 
+
+    var date = new Date();
+    var yyyy = date.getFullYear();
+    var year=dob.split("-")[0];
+    var age=yyyy-year
+
+    if (age<18||age>55){
+        return alert("You must be between 18 and 55");
+    }
+
     const entry={
         name,
         email,
